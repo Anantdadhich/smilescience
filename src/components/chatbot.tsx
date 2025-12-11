@@ -1,7 +1,6 @@
-
 "use client";
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageSquare, X, Send, User } from 'lucide-react';
+import { MessageCircle, X, Send, User } from 'lucide-react';
 import { Button } from './ui/button';
 import { useRouter } from 'next/navigation';
 
@@ -60,7 +59,6 @@ export const Chatbot = () => {
   const handleSendMessage = async (displayText: string, isSystemMessage = false, apiPayload?: string) => {
     if (!displayText.trim()) return;
 
-    // 1. Show the USER friendly text in the UI (e.g., "Book Appointment")
     if (!isSystemMessage) {
       const userMsg: Message = { 
         id: Date.now().toString(), 
@@ -79,7 +77,6 @@ export const Chatbot = () => {
         .filter(m => m.type === 'text')
         .map(m => `${m.sender === 'user' ? 'User' : 'Assistant'}: ${m.text}`);
 
-      // 2. Send the SYSTEM payload to the API if it exists (e.g., "ACTION_NAVIGATE_BOOKING")
       const messageToSend = apiPayload || displayText;
 
       const response = await fetch('/api/chat', {
@@ -116,28 +113,19 @@ export const Chatbot = () => {
   };
 
   const handleOptionClick = (payload: string, label: string) => {
-    // Case 1: Internal Route - Navigate immediately, don't chat
     if (payload.startsWith('/')) {
       setIsOpen(false);
       router.push(payload);
       return;
     }
-
-    // Case 2: External Link
     if (payload.startsWith('http')) {
       window.open(payload, '_blank');
       return;
     }
-
-    // Case 3: Phone
     if (payload.startsWith('tel:')) {
       window.location.href = payload;
       return;
     }
-
-    // Case 4: Chat Actions
-    // Send 'label' to be displayed in UI ("Book Appointment")
-    // Send 'payload' to be processed by Backend ("ACTION_NAVIGATE_BOOKING")
     if (payload.startsWith('ACTION_')) {
       handleSendMessage(label, false, payload);
     } else {
@@ -173,6 +161,7 @@ export const Chatbot = () => {
           </div>
         );
 
+      // --- MODIFIED FORM LOGIC ---
       case 'booking_form':
         return (
           <div className="flex flex-col gap-3 w-full">
@@ -180,12 +169,22 @@ export const Chatbot = () => {
             <form 
               onSubmit={(e) => {
                 e.preventDefault();
-                handleSendMessage("FORM_SUBMITTED_DETAILS");
+                // 1. Capture the form data
+                const formData = new FormData(e.currentTarget);
+                const name = formData.get('userName') as string;
+                const phone = formData.get('userPhone') as string;
+                
+                // 2. Send data to backend if valid
+                if(name && phone) {
+                    const payload = `ACTION_SUBMIT_BOOKING_NAME_${name}_PHONE_${phone}`;
+                    handleSendMessage(`Confirmed details: ${name}, ${phone}`, false, payload);
+                }
               }}
               className="flex flex-col gap-2 mt-2"
             >
-              <input type="text" placeholder="Your Name" className="w-full text-base md:text-xs p-3 md:p-2 rounded border border-gray-200 bg-gray-50 focus:ring-1 focus:ring-gray-500 outline-none" required />
-              <input type="tel" placeholder="Phone Number" className="w-full text-base md:text-xs p-3 md:p-2 rounded border border-gray-200 bg-gray-50 focus:ring-1 focus:ring-gray-500 outline-none" required />
+              {/* Added name attributes to inputs */}
+              <input name="userName" type="text" placeholder="Your Name" className="w-full text-base md:text-xs p-3 md:p-2 rounded border border-gray-200 bg-gray-50 focus:ring-1 focus:ring-gray-500 outline-none" required />
+              <input name="userPhone" type="tel" placeholder="Phone Number" className="w-full text-base md:text-xs p-3 md:p-2 rounded border border-gray-200 bg-gray-50 focus:ring-1 focus:ring-gray-500 outline-none" required />
               <button type="submit" className="w-full bg-[#18181B] text-white text-sm py-3 md:py-2 rounded hover:bg-black font-medium active:scale-95 transition-transform">
                 Confirm Appointment
               </button>
@@ -226,8 +225,6 @@ export const Chatbot = () => {
           absolute bottom-20 right-0
           w-[calc(100vw-48px)] md:w-[380px]
           bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden flex flex-col 
-          
-          /* CHANGED: Restored original height logic */
           max-h-[85vh] h-[600px]
         `}
       >
@@ -369,7 +366,7 @@ export const Chatbot = () => {
         className="w-16 h-16 rounded-full bg-[#18181B] hover:bg-black text-white shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] transition-all hover:scale-105 flex items-center justify-center z-[100]"
       >
         <div className={`transition-all duration-300 absolute ${isOpen ? 'rotate-90 opacity-0' : 'rotate-0 opacity-100'}`}>
-           <MessageSquare className="w-7 h-7" />
+           <MessageCircle className="w-7 h-7" />
         </div>
         <div className={`transition-all duration-300 absolute ${isOpen ? 'rotate-0 opacity-100' : '-rotate-90 opacity-0'}`}>
            <X className="w-7 h-7" />

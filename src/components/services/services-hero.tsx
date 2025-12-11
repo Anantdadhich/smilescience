@@ -33,7 +33,7 @@ export const ServicesHero = () => {
               {/* Description - Local Keywords */}
               <p className="text-gray-500 text-lg leading-relaxed mb-8 font-light max-w-lg">
                 From <strong>Painless Root Canals</strong> and <strong>Invisible Aligners</strong> to complete <strong>Smile Makeovers</strong>. 
-                We combine advanced technology with gentle care to deliver the best dental outcomes in <strong>Neeladri Nagar</strong>.
+                We combine advanced technology with gentle care to deliver the best dental outcomes in <strong>Electronic City , Banglore</strong>.
               </p>
 
               {/* Quick Feature Tags */}
@@ -59,7 +59,7 @@ export const ServicesHero = () => {
                   }}
                >
                  <ImageWithFallback
-                   src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1080"
+                   src="/serv.jpeg"
                    alt="Advanced Dental Services in Electronic City Bangalore"
                    className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-1000"
                   

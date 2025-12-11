@@ -31,10 +31,12 @@ export const Header = () => {
   const navItems = [
     { label: "Home", path: "/" },
     { label: "Services", path: "/services" },
+   
     { label: "About us", path: "/about" },
     { label: "Book Appointment", path: "/book" },
     { label: "For Patients", path: "/patients" },
     { label: "Contact us", path: "/contact" },
+     { label: "Gallery", path: "/gallery" },
   ];
 
   return (
@@ -51,8 +53,9 @@ export const Header = () => {
           {/* Left Group: Logo + Nav */}
           <div className="flex items-center gap-8 xl:gap-14">
             
-            {/* Logo Group */}
-            <Link href="/" className="flex items-center group shrink-0">
+            {/* Logo Group - ADJUSTED FOR PROPER SPACING AND STACKING */}
+            <Link href="/" className="flex items-center gap-3 group shrink-0">
+              {/* Image Container */}
               <div className="relative w-10 h-10 flex items-center justify-center p-0.5 transition-transform duration-300">
                 <Image 
                   src="/logo.png" 
@@ -63,8 +66,14 @@ export const Header = () => {
                 />
               </div>
               
-              <div className="text-[22px] font-serif  text-[#1A1A1A] group-hover:text-[#1d5343] transition-colors translate-y-0.5" style={{ fontFamily: 'var(--font-playfair)' }}>
+              {/* Text Container - Optimized alignment */}
+              <div className="flex flex-col justify-center -space-y-1">
+                <span className="text-lg font-extrabold text-[#1A1A1A] leading-tight tracking-tight">
                   Smile Science
+                </span>
+                <span className="text-[9px] text-gray-500 font-bold tracking-widest uppercase leading-none">
+                  Dentistry
+                </span>
               </div>
             </Link>
 

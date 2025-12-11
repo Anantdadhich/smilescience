@@ -51,7 +51,7 @@ export const WhatToExpect = () => {
                 <span className="italic text-[#1d5343]">your first visit.</span>
               </h2>
               <p className="text-gray-500 text-lg leading-relaxed max-w-2xl font-light">
-                We have streamlined our process to ensure your visit to our Neeladri Nagar clinic is efficient, comfortable, and anxiety-free.
+                We have streamlined our process to ensure your visit to our  Electonic City , clinic is efficient, comfortable, and anxiety-free.
               </p>
             </div>
             

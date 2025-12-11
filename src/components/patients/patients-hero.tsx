@@ -20,7 +20,7 @@ export const PatientsHero = () => {
               Everything you need to feel confident about your first visit
             </h1>
             <p className="text-gray-600 text-base md:text-lg max-w-3xl leading-relaxed mb-8">
-              Your initial appointment at Smile Science Dental Clinic is designed to be smooth, informative, and completely personalized. 
+              Your initial appointment at Smile Science Dental Clinic in Electronic City is designed to be smooth, informative, and completely personalized. 
               Here’s what to expect before, during, and after your visit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

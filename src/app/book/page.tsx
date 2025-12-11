@@ -231,7 +231,7 @@ export default function BookPage() {
             
             {/* The "Why Us" Card */}
             <ScrollAnimation delay={0.2}>
-              <div className="bg-[#1d5343] rounded-[2rem] p-8 text-white relative overflow-hidden">
+              <div className="bg-[#1d5343] rounded-4xl p-8 text-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
                 
                 <h3 className="text-xl font-serif font-medium mb-6 relative z-10">The Smile Science Promise</h3>
@@ -254,7 +254,7 @@ export default function BookPage() {
 
             {/* Emergency / Walk-in Card */}
             <ScrollAnimation delay={0.3}>
-              <div className="bg-white rounded-[2rem] p-8 border border-orange-100 shadow-sm relative overflow-hidden group">
+              <div className="bg-white rounded-4xl p-8 border border-orange-100 shadow-sm relative overflow-hidden group">
                  <div className="absolute right-0 top-0 w-24 h-24 bg-orange-50 rounded-bl-[4rem] -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
                  
                  <div className="relative z-10">

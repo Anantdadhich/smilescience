@@ -30,8 +30,8 @@ export const CTA = () => {
           </h2>
           
           <p className="text-white/70 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-            Expert care in Neeladri Nagar is just one click away. 
-            Join the Smile Science family today.
+            Expert care in Electronic City is just one click away. 
+            Join the Smile Science Dentistry family today.
           </p>
 
           {/* Buttons - High Contrast */}

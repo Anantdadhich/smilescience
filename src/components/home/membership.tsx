@@ -18,10 +18,10 @@ export const Membership = () => {
               <span className="text-[10px] font-bold text-[#1d5343] uppercase tracking-[0.2em]">001 — The E-City Club</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-serif text-[#1A1A1A] mb-3 tracking-tight leading-tight">
-              Bangalore’s Smartest <br /> Dental Membership
+              Bangalore’s Smartest <br /> Dental Clinic
             </h2>
             <p className="text-gray-500 text-sm md:text-base font-normal tracking-wide max-w-sm leading-relaxed">
-              Join <strong>500+ Neeladri families</strong> who enjoy predictable dental care, priority access, and complete peace of mind—without surprise bills or unpredictable costs.
+              Join <strong>500+ Electronic City families</strong> who enjoy predictable dental care, priority access, and complete peace of mind—without surprise bills or unpredictable costs.
             </p>
           </div>
         </div>
@@ -69,8 +69,8 @@ export const Membership = () => {
               <div className="max-w-sm relative z-10">
                   <h4 className="text-lg font-bold text-white mb-2">Your Safety Net for the Unexpected</h4>
                   <p className="text-gray-300/90 text-sm leading-relaxed font-medium">
-                      For moments when you need advanced care—like a root canal, crown, or restorative treatment—membership gives you consistent pricing, clarity, and priority appointments.
-                      <span className="block mt-2 text-white">A membership built for peace of mind.</span>
+                      For moments when you need advanced care—like a root canal, crown, or restorative treatment our clinic gives you consistent pricing, clarity, and priority appointments.
+                      <span className="block mt-2 text-white">A Clinic built for peace of mind.</span>
                   </p>
               </div>
           </div>

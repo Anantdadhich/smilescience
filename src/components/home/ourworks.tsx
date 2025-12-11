@@ -123,11 +123,11 @@ export const OurWorks = () => {
 
           <div className="max-w-lg space-y-6">
             <p className="text-gray-500 text-base leading-relaxed font-light">
-              Expert Dental Care in <strong>Neeladri Nagar</strong>. We combine art and science to give you the confidence you deserve.
+              Expert Dental Care in <strong>Neeladri Nagar, Electronic City</strong>. We combine art and science to give you the confidence you deserve.
             </p>
             <div className="h-px w-12 bg-[#1d5343]/30 mx-auto"></div>
             <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
-              Smile Science Dental
+              Smile Science Dentistry
             </p>
           </div>
         </div>

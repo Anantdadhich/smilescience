@@ -15,9 +15,11 @@ export const Footer = () => {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'Services', href: '/services' },
+ 
     { label: 'For Patients', href: '/patients' },
     { label: 'Book Appointment', href: '/book' },
-    { label: 'Contact', href: '/contact' }
+    { label: 'Contact', href: '/contact' },
+       { label: 'Gallery', href: '/gallery' },
   ];
 
   // Trimmed list to make footer shorter

@@ -29,35 +29,7 @@ export default function RootCanalPage() {
   return (
     <div className="bg-[#FDFBF0] min-h-screen font-sans pb-32 md:pb-0">
       
-      {/* --- 📱 STICKY MOBILE FOOTER (Always Visible) --- */}
-      <div className="fixed bottom-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md border-t border-gray-200 p-3 md:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.05)] safe-area-pb">
-        <div className="flex items-center justify-between gap-3 max-w-sm mx-auto">
-          {/* Left: WhatsApp Status */}
-          <a 
-            href={`https://wa.me/${WA_NUM}?text=${PREFILL_GENERAL}`}
-            className="flex flex-col flex-1 pl-2"
-          >
-            <span className="text-sm font-bold text-[#1d5343] flex items-center gap-2">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600 border border-white"></span>
-              </span>
-              Emergency: OPEN
-            </span>
-            <span className="text-[10px] text-gray-500 font-medium ml-5">Avg Response: 40 sec</span>
-          </a>
-          
-          {/* Right: Call Button */}
-          <a href="tel:08048903967">
-            <Button 
-              className="bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full px-6 h-12 text-sm font-bold shadow-lg flex items-center gap-2 animate-pulse-slow"
-              aria-label="Call doctor now"
-            >
-              <Phone className="w-4 h-4 fill-current" /> CALL NOW
-            </Button>
-          </a>
-        </div>
-      </div>
+    
 
       {/* --- 🦷 HERO SECTION --- */}
       <section className="relative pt-28 pb-16 px-6 md:px-12 overflow-hidden">
@@ -115,7 +87,7 @@ export default function RootCanalPage() {
               <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-700 font-medium mb-8">
                  <div className="flex items-center gap-1.5">
                    <Star className="w-4 h-4 text-yellow-500 fill-current" /> 
-                   <span>4.9 (87 Reviews)</span>
+                   <span>4.9 Rated</span>
                  </div>
                  <div className="hidden sm:flex h-4 w-px bg-gray-300"></div>
                  <div className="flex items-center gap-1.5">
@@ -147,7 +119,7 @@ export default function RootCanalPage() {
                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10 aspect-square border-[8px] border-white">
                  {/* PLACEHOLDER FOR DOCTOR IMAGE - Replace src below */}
                  <img 
-                   src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop" 
+                   src="/rcthero.jpeg" 
                    alt="Dr Pranjal treatment" 
                    className="w-full h-full object-cover"
                  />
@@ -203,8 +175,9 @@ export default function RootCanalPage() {
 
             {/* Testimonial */}
             <div className="bg-gray-50 p-6 rounded-2xl text-center italic text-gray-600 max-w-2xl mx-auto border-l-4 border-[#1d5343]">
-              "I kept waiting for the pain to start, but the doctor said 'We are done.' Truly painless." 
-              <span className="block not-italic font-bold text-[#1A1A1A] mt-2 text-sm">— Anjali R., Electronic City</span>
+              "I did my root canal treatment and tooth cavity filling. The doctor Pranjal explained everything very clearly and treatment was very smooth." 
+              <span className="block not-italic font-bold text-[#1A1A1A] mt-2 text-sm">— 
+Krithika Prabakaran, Electronic City</span>
             </div>
             
             <div className="text-center mt-8">
@@ -276,7 +249,7 @@ export default function RootCanalPage() {
               <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-[#FDFBF0] shadow-xl relative">
                 {/* PLACEHOLDER FOR DR PHOTO */}
                  <img 
-                   src="/" 
+                   src="/drpic.jpg" 
                    alt="Dr Pranjal" 
                    className="w-full h-full object-cover"
                  />

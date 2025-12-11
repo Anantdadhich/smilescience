@@ -24,18 +24,7 @@ export default function DentalImplantsPage() {
   return (
     <div className="bg-[#FDFBF0] min-h-screen font-sans pb-24 md:pb-0">
       
-      {/* --- STICKY MOBILE FOOTER (HIGH-CONVERSION VERSION) --- */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 p-3 md:hidden shadow-[0_-4px_10px_rgba(0,0,0,0.1)] flex items-center justify-between gap-2">
-        <div className="flex flex-col">
-          <span className="text-sm font-bold text-[#1A1A1A]">🦷 Missing a Tooth?</span>
-          <span className="text-[10px] text-gray-500">Avg reply: 2–3 minutes</span>
-        </div>
-        <a href="https://wa.me/918048903967?text=Hi%20Dr.%20Pranjal,%20I%20have%20a%20missing%20tooth.%20Can%20I%20send%20my%20X-ray%20to%20check%20if%20I%E2%80%99m%20eligible%20for%20an%20implant?" target="_blank" rel="noopener noreferrer">
-          <Button className="bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full px-4 h-10 text-xs font-bold shadow-md">
-            GET FIXED QUOTE →
-          </Button>
-        </a>
-      </div>
+     
 
       {/* --- HERO SECTION --- */}
       <section className="relative pt-24 pb-16 px-6 md:px-12 overflow-hidden">
@@ -103,8 +92,8 @@ export default function DentalImplantsPage() {
             <div className="relative">
                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10 aspect-[4/5] md:aspect-[4/3]">
                  <img 
-                   src="/" 
-                   alt="Dr. Pranjal Senior Implantologist" 
+                   src="https://images.unsplash.com/photo-1677026010083-78ec7f1b84ed?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRlbnRhbCUyMGltcGxhbnRzfGVufDB8fDB8fHww" 
+                   alt="" 
                    className="w-full h-full object-cover"
                  />
                  <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-[#1d5343]/10">
@@ -114,7 +103,7 @@ export default function DentalImplantsPage() {
                         </div>
                         <div>
                             <p className="font-bold text-[#1A1A1A]">Lifetime Warranty</p>
-                            <p className="text-xs text-gray-600">On all implant bodies</p>
+                            
                         </div>
                     </div>
                  </div>
@@ -125,8 +114,8 @@ export default function DentalImplantsPage() {
       </section>
 
       {/* --- NEW SECTION: BEFORE & AFTER VISUAL PROOF --- */}
-      <section className="py-16 px-6 md:px-12 bg-[#1d5343] text-white overflow-hidden">
-        <div className="max-w-[1200px] mx-auto">
+      <section className="py-14 px-5 md:px-10 bg-[#1d5343] text-white overflow-hidden">
+        <div className="max-w-[800px] mx-auto">
             <ScrollAnimation>
                 <div className="text-center mb-10">
                     <span className="text-xs font-bold tracking-widest uppercase text-white/70 mb-2 block">Real Results</span>
@@ -136,7 +125,7 @@ export default function DentalImplantsPage() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <div className="">
                     {/* Case 1 */}
                     <div className="bg-white/10 rounded-[2rem] p-4 backdrop-blur-sm border border-white/10">
                         <div className="relative h-64 md:h-72 rounded-[1.5rem] overflow-hidden group">
@@ -148,14 +137,14 @@ export default function DentalImplantsPage() {
                                 </div>
                             </div>
                             <img 
-                                src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=800" 
+                                src="/beforeimp.png" 
                                 alt="Before Implant"
-                                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0" 
+                                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500  group-hover:opacity-0" 
                             />
                             <div className="absolute top-4 left-4 bg-black/60 px-3 py-1 rounded-full text-xs font-bold uppercase transition-opacity duration-500 group-hover:opacity-0">Before</div>
                             
                             <img 
-                                src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=800" 
+                                src="/afterimp.png" 
                                 alt="After Implant" 
                                 className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100" 
                             />
@@ -167,34 +156,7 @@ export default function DentalImplantsPage() {
                         </div>
                     </div>
 
-                    {/* Case 2 */}
-                    <div className="bg-white/10 rounded-[2rem] p-4 backdrop-blur-sm border border-white/10 hidden md:block">
-                        <div className="relative h-64 md:h-72 rounded-[1.5rem] overflow-hidden group">
-                            <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center p-6">
-                                <div>
-                                    <ArrowLeftRight className="w-10 h-10 mx-auto text-white/50 mb-2" />
-                                    <p className="text-sm text-white/70">Hover/Tap to see transformation</p>
-                                </div>
-                            </div>
-                            <img 
-                                src="https://images.unsplash.com/photo-1616391182219-e080b4d1043a?q=80&w=800" 
-                                alt="Before Implant"
-                                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0" 
-                            />
-                            <div className="absolute top-4 left-4 bg-black/60 px-3 py-1 rounded-full text-xs font-bold uppercase transition-opacity duration-500 group-hover:opacity-0">Before</div>
-                            
-                            <img 
-                                src="https://images.unsplash.com/photo-1588776813677-77aaa5b8d0d0?q=80&w=800" 
-                                alt="After Implant" 
-                                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100" 
-                            />
-                            <div className="absolute top-4 right-4 bg-[#25D366] px-3 py-1 rounded-full text-xs font-bold uppercase transition-opacity duration-500 opacity-0 group-hover:opacity-100">After</div>
-                        </div>
-                        <div className="mt-4 px-2">
-                            <p className="font-bold text-lg">Full Arch Restoration</p>
-                            <p className="text-sm text-white/70">65-year-old Resident from Electronic City Ph 1</p>
-                        </div>
-                    </div>
+                   
                 </div>
             </ScrollAnimation>
         </div>
@@ -207,7 +169,7 @@ export default function DentalImplantsPage() {
                 <div className="bg-[#FDFBF0] border border-[#1d5343]/20 rounded-[2rem] p-8 md:p-12 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-2 bg-[#1d5343]"></div>
                     <h2 className="text-2xl md:text-3xl font-serif font-medium text-[#1A1A1A] mb-8 text-center">
-                        Why Neeladri Residents Prefer Owner-Run Clinics
+                        Why Electronic City Residents Prefer Owner-Run Clinics
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
@@ -260,7 +222,7 @@ export default function DentalImplantsPage() {
             <ScrollAnimation>
                 <div className="sticky top-24">
                     <h2 className="text-3xl font-serif font-medium text-[#1A1A1A] mb-6">
-                        Trusted in Neeladri for 15+ years
+                        Trusted in Electronic City for 15+ years
                     </h2>
                     <div className="flex flex-col gap-4 mb-8">
                         <div className="flex items-center gap-2 text-yellow-500">
@@ -411,7 +373,7 @@ export default function DentalImplantsPage() {
                 </div>
             </ScrollAnimation>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Standard Plan */}
                 <ScrollAnimation delay={0.1}>
                     <div className="h-full border-2 border-[#1d5343] rounded-[2rem] p-8 relative bg-[#FDFBF0] shadow-xl transform scale-105 z-10">
@@ -419,7 +381,7 @@ export default function DentalImplantsPage() {
                             Most Patients Choose This
                         </div>
                         <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">Standard Value Plan</h3>
-                        <div className="text-3xl font-serif font-medium text-[#1d5343] mb-4">₹20,000–₹25,000</div>
+                        <div className="text-3xl font-serif font-medium text-[#1d5343] mb-4">₹30,000–₹35,000</div>
                         <p className="text-sm text-gray-600 mb-6">Brand: Osstem / Hi-Tec</p>
                         <p className="text-sm font-medium text-[#1A1A1A] mb-8 bg-white p-3 rounded-lg border border-[#1d5343]/10">
                             Ideal: Back teeth & high chewing load
@@ -430,20 +392,6 @@ export default function DentalImplantsPage() {
                     </div>
                 </ScrollAnimation>
 
-                {/* Premium Plan */}
-                <ScrollAnimation delay={0.2}>
-                    <div className="h-full border border-gray-200 rounded-[2rem] p-8 relative bg-white hover:shadow-lg transition-all">
-                        <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">Premium Swiss Plan</h3>
-                        <div className="text-3xl font-serif font-medium text-[#1A1A1A] mb-4">₹30,000–₹45,000</div>
-                        <p className="text-sm text-gray-600 mb-6">Brand: Nobel Biocare / Straumann</p>
-                        <p className="text-sm font-medium text-[#1A1A1A] mb-8 bg-gray-50 p-3 rounded-lg">
-                            Ideal: Smile zone (front teeth)
-                        </p>
-                         <a href="https://wa.me/918048903967?text=Hi%20Doctor,%20I%20want%20an%20exact%20quote%20for%20premium%20implant." className="block">
-                            <Button variant="outline" className="w-full rounded-full border-[#1A1A1A] text-[#1A1A1A]">Get Exact Price Quote</Button>
-                        </a>
-                    </div>
-                </ScrollAnimation>
 
                 {/* Full Mouth */}
                 <ScrollAnimation delay={0.3}>
@@ -455,7 +403,7 @@ export default function DentalImplantsPage() {
                             For denture replacement or multiple missing teeth.
                         </p>
                         <a href="https://wa.me/918048903967?text=Hi%20Doctor,%20I%20want%20an%20exact%20quote%20for%20full%20mouth." className="block">
-                            <Button variant="outline" className="w-full rounded-full border-[#1A1A1A] text-[#1A1A1A]">Get Exact Price Quote</Button>
+                            <Button variant="outline" className="w-full rounded-full border-[#1A1A1A] text-[#1A1A1A] bg-[#1d5343] hover:bg-[#163f33]]">Get Exact Price Quote</Button>
                         </a>
                     </div>
                 </ScrollAnimation>
@@ -556,7 +504,7 @@ export default function DentalImplantsPage() {
                  <div className="rounded-[2.5rem] overflow-hidden aspect-[3/4]">
                     {/* Smiling Headshot Placeholder */}
                     <img 
-                        src="/" 
+                        src="/drpic.jpg" 
                         alt="Dr. Pranjal" 
                         className="w-full h-full object-cover" 
                     />
@@ -581,7 +529,7 @@ export default function DentalImplantsPage() {
                     </div>
                     
                     <p className="mt-6 text-gray-600 leading-relaxed">
-                        Known for ethical, transparent care and trusted by 200+ Neeladri families. 
+                        Known for ethical, transparent care and trusted by 200+ Neeladri families or Electronic City. 
                         Each implant is performed <strong className="text-[#1d5343]">PERSONALLY</strong>.
                     </p>
                 </div>
@@ -625,7 +573,7 @@ export default function DentalImplantsPage() {
                         <div className="flex justify-center mb-2">
                              <Calendar className="w-6 h-6 text-red-500" />
                         </div>
-                        <h3 className="text-lg font-bold text-red-900 mb-1">Only 2 Implant Slots Per Day</h3>
+                        <h3 className="text-lg font-bold text-red-900 mb-1">Only 1 Implant Slots Per Day</h3>
                         <p className="text-sm text-red-800 mb-4">To maintain strict sterilization & precision. Slots fill 3–5 days in advance.</p>
                         <a href="https://wa.me/918048903967?text=Hi%20Doctor,%20I%20want%20to%20check%20the%20next%20available%20slot." className="inline-block">
                              <span className="text-sm font-bold text-red-600 underline">Check Next Available Slot on WhatsApp →</span>
@@ -667,7 +615,7 @@ export default function DentalImplantsPage() {
                  </Button>
                </a>
                <a href="#pricing" className="w-full sm:w-auto">
-                 <Button variant="outline" className="h-16 w-full rounded-full border border-white/30 text-white transition-all hover:bg-white/10 font-medium sm:w-auto sm:px-10 text-lg">
+                 <Button variant="outline" className="h-16 w-full rounded-full border border-white/30 text-white transition-all hover:bg-white/10 font-medium sm:w-auto sm:px-10 text-lg hover:text-white hover:border-white/50 hover:cursor-pointer">
                    Get Exact Price Quote
                  </Button>
                </a>

@@ -79,7 +79,7 @@ export default function ContactPage() {
             
             <p className="text-[#4B5563] text-lg max-w-2xl mx-auto leading-relaxed font-light">
               Whether you have a question about our services, need to schedule a consultation, 
-              or just want to say hello, our team in <strong>Neeladri Nagar</strong> is ready to help.
+              or just want to say hello, our team in <strong>Neeladri Nagar , Electronic City</strong> is ready to help.
             </p>
           </ScrollAnimation>
         </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Call Us</p>
-                      <a href="tel:08048903967" className="block text-[#1A1A1A] font-medium hover:text-[#1d5343] transition-colors">080 4890 3967</a>
+                 
                       <a href="tel:+916206700442" className="block text-[#1A1A1A] font-medium hover:text-[#1d5343] transition-colors">+91 62067 00442</a>
                     </div>
                   </div>
@@ -186,7 +186,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full px-5 py-4 rounded-xl bg-[#FDFBF0] border-transparent focus:bg-white focus:border-[#1d5343] focus:ring-0 transition-all text-[#1A1A1A] placeholder:text-gray-400 font-medium"
-                        placeholder="John Doe"
+                        placeholder="Ramesh Kumar"
                       />
                     </div>
                     <div className="space-y-2">
@@ -212,7 +212,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       className="w-full px-5 py-4 rounded-xl bg-[#FDFBF0] border-transparent focus:bg-white focus:border-[#1d5343] focus:ring-0 transition-all text-[#1A1A1A] placeholder:text-gray-400 font-medium"
-                      placeholder="john@example.com"
+                      placeholder="rameshkumar@gmail.com"
                     />
                   </div>
 

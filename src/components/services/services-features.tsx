@@ -86,7 +86,7 @@ export const ServicesFAQ = () => {
               Common Questions <span className="italic text-[#1d5343]">Answered</span>
             </h2>
             <p className="text-gray-500 text-base md:text-lg max-w-2xl mx-auto">
-              Clear answers about our treatments, pricing, and clinic policies to help you make informed decisions.
+              Clear answers about our treatments, pricing, and clinic policies to help you make informed decisions in Electronic City.
             </p>
           </div>
         </ScrollAnimation>
