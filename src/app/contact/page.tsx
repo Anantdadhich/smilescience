@@ -116,8 +116,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Email Us</p>
-                      <a href="mailto:drpranjal@smilescience.in" className="text-[#1A1A1A] font-medium hover:text-[#1d5343] transition-colors break-all">
-                        drpranjal@smilescience.in
+                      <a href="mailto: drpranjal@smilesciencedentistry.in" className="text-[#1A1A1A] font-medium hover:text-[#1d5343] transition-colors break-all">
+                        drpranjal@smilesciencedentistry.in
                       </a>
                     </div>
                   </div>

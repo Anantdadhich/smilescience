@@ -44,8 +44,8 @@ const DOCTORS_DB = {
   dr_pranjal: {
     id: "dr_pranjal",
     name: "Dr. Pranjal Sinha",
-    specialty: "General Dentist",
-    image_url: "/drpic.jpg",
+    specialty: "Chief Dentist",
+    image_url: "/img.png",
     short_bio: "Friendly general dentist focused on patient comfort, preventive care, and painless treatments.",
   }
 };
@@ -206,8 +206,8 @@ Knowledge Base:
 ${pineconeContext ? `Use the following clinic knowledge base to answer accurately. If relevant, quote or paraphrase it in a natural way:\n${pineconeContext}\n` : `If clinic-specific information is needed and not provided, answer generally and suggest contacting the clinic for exact details.\n`}
 
 Basic Clinic Info (always trust this if there is a conflict):
-- Doctor: Dr. Pranjal Sinha – General Dentist, specializing in patient comfort, preventive care, and painless treatments.
-- Location: 4th Floor, 224, 3rd Cross Road, Neeladri Nagar, Electronic City Phase 1, Bangalore.
+- Doctor: Dr. Pranjal Sinha – Chief Dentist, specializing in patient comfort, preventive care, and painless treatments.
+- Location: 5th Floor, 224, 3rd Cross Road, Neeladri Nagar, Electronic City Phase 1, Bangalore.
 - Hours: Monday–Saturday, 12 PM–8 PM (Closed Sundays).
 - Contact: +916206700442.
 

@@ -129,7 +129,7 @@ export default function GumDiseasePage() {
             <h2 className="text-3xl font-serif font-medium mb-4">Treat Your Gum Disease Today</h2>
             <p className="text-white/80 mb-8">Schedule a consultation to assess your gum health and discuss treatment options.</p>
             <div className="flex flex-col items-stretch gap-4 justify-center sm:flex-row sm:items-center">
-              <a href="tel:08048903967" className="w-full sm:w-auto">
+              <a href="tel:+916206700442" className="w-full sm:w-auto">
                 <Button className="h-12 w-full rounded-full bg-white text-[#1d5343] transition-all hover:bg-gray-100 flex items-center justify-center gap-2 font-bold sm:w-auto sm:px-8">
                   <Phone className="w-4 h-4 fill-current" /> Call Now
                 </Button>

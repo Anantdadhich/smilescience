@@ -31,7 +31,7 @@ export const About = () => {
               
               <p className="text-[#4B5563] text-lg leading-relaxed mb-8 font-light">
                 For over 15 years, Dr. Pranjal Sinha has been the trusted dental authority in <strong>Neeladri Nagar</strong> and <strong>Electronic City</strong>. 
-                Combining advanced clinical expertise with a gentle touch, he has transformed thousands of smiles—one patient at a time.
+                Combining advanced clinical expertise with a gentle touch, she has transformed thousands of smiles—one patient at a time.
               </p>
 
               {/* Stats / Badges */}

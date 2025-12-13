@@ -264,7 +264,7 @@ Krithika Prabakaran, Electronic City</span>
               <div className="text-sm text-[#1d5343] mb-6">Chief Dentist, Smile Science</div>
               
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-                 <a href="tel:08048903967">
+                 <a href="tel:+916206700442">
                    <Button size="sm" className="rounded-full bg-[#1A1A1A] text-white">Call Dr. Pranjal</Button>
                  </a>
                  <a href={`https://wa.me/${WA_NUM}?text=${PREFILL_GENERAL}`}>
@@ -392,7 +392,7 @@ Krithika Prabakaran, Electronic City</span>
                    Chat on WhatsApp
                  </Button>
                </a>
-               <a href="tel:08048903967" className="w-full sm:w-auto">
+               <a href="tel:+916206700442" className="w-full sm:w-auto">
                  <Button variant="outline" className="h-16 w-full rounded-full border-white/20 text-white hover:text-white hover:bg-white/10 px-10 text-lg">
                    Call Clinic Directly
                  </Button>

@@ -138,15 +138,15 @@ export const Chatbot = () => {
       case 'card':
       case 'welcome_card':
         return (
-          <div className="flex flex-col gap-3 w-full">
+          <div className="flex flex-col gap-1 w-full">
             {msg.image && (
-              <div className="relative w-full h-38 rounded-lg overflow-hidden mb-1">
+              <div className="relative w-full h-48 rounded-lg overflow-hidden">
                 <img src={msg.image} alt="Doctor" className="w-full h-full object-cover" />
               </div>
             )}
             <div className="whitespace-pre-wrap">{msg.text}</div>
             {msg.buttons && (
-              <div className="flex flex-wrap gap-2 mt-2">
+              <div className="flex flex-wrap gap-1 mt-2">
                 {msg.buttons.map((btn, idx) => (
                   <button
                     key={idx}
@@ -366,7 +366,7 @@ export const Chatbot = () => {
         className="w-16 h-16 rounded-full bg-[#18181B] hover:bg-black text-white shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] transition-all hover:scale-105 flex items-center justify-center z-[100]"
       >
         <div className={`transition-all duration-300 absolute ${isOpen ? 'rotate-90 opacity-0' : 'rotate-0 opacity-100'}`}>
-           <MessageCircle className="w-7 h-7" />
+           <MessageCircle className="w-11 h-11" />
         </div>
         <div className={`transition-all duration-300 absolute ${isOpen ? 'rotate-0 opacity-100' : '-rotate-90 opacity-0'}`}>
            <X className="w-7 h-7" />
